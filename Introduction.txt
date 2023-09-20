@@ -1,25 +1,139 @@
-What is Javascript ?
-JavaScript is a text-based programming language used both on the client-side and server-side that allows you to make web pages interactive. HTML and CSS are languages that give structure and style to web pages, JavaScript gives web pages interactive elements that engage a user. It creates elements for improving site visitors' interaction with web pages, such as dropdown menus, animated graphics, and dynamic background colors. 
+JavaScript_Task-1
 
-History of JS?
-JavaScript was originally developed by Brendan Eich of Netscape Communications Corporation in 1995 under the name Mocha, then LiveScript, and finally renamed to JavaScript. It was developed for Netscape 2, and became the ECMA-262 standard in 1997. After Netscape handed JavaScript over to ECMA, the Mozilla foundation continued to develop JavaScript for the Firefox browser. Mozilla's latest version was 1.8.5. (Identical to ES5).
 
-How to run JS?
-To run JavaScript on a browser,
-1. Open the browser (e.g.Google Chrome).
-2. Open the developer tools by right clicking on an empty area and select Inspect. 
-3. On the developer tools, go to the console tab. Then, write JavaScript code and press enter to run the code.
+Q_1) What is JavaScript ?
 
-What are datatypes of javascript?
-Data types are divided into two groups permitive an non permitive. 
+JavaScript is a text-based programming language used both on the client-side and server-side. It is a versatile and widely used programming language primarily used for web development. It allows developers to add interactivity, manipulate web page content, and create dynamic experiences for users within web browsers. JavaScript is a core technology for building modern web applications and is supported by all major web browsers like Chrome, Firefox, Safari, and Edge.
+Some of the key features of JavaScript include:
+1. Client-Side Scripting: JavaScript is mainly executed on the client side, which means it runs in the user's web browser. This allows developers to create dynamic and responsive user interfaces without requiring constant communication with the web server.
+2. Server-Side Development: While JavaScript is mainly associated with client-side scripting, it can also be used for server-side development through platforms like Node.js. This enables developers to use JavaScript for building both the front-end and back-end components of web applications.
+3. High-Level Language: JavaScript is a high-level, interpreted language, making it relatively easy to read, write, and debug. It has a C-like syntax, making it accessible to developers from various programming backgrounds.
+4. Extensive Standard Library: JavaScript comes with a comprehensive standard library that provides built-in functions and objects for various tasks, such as manipulating strings, working with arrays, and handling events.
+5. Interpreted Language: JavaScript code is executed directly by a web browser without the need for compilation, which makes development and testing more accessible.
+6. Scripting Language: JavaScript is often referred to as a scripting language because it is primarily used to write scripts that are executed within a web browser. These scripts can manipulate web page content, respond to user interactions, and perform various tasks.
+
+Q_2) History of JS?
+
+JavaScript, often referred to as JS, started in the mid-1990s when Netscape, a web browser company, wanted a way to make web pages more interactive. Originally called Live Script, it later became JavaScript. Despite its name, it's different from Java. In 1997, it was standardized as ECMAScript. During the early 2000s, JS became crucial in web development, allowing websites to change and update without needing to reload. This led to Web 2.0, where sites got much more interactive. In 2015, ECMAScript 6 brought many improvements, and Node.js in 2009 allowed JS to run on servers, not just in browsers. Today, JavaScript is a vital part of web and app development, constantly evolving to create dynamic and engaging online experiences.
+
+Q_3) How to run JS?
+Running JavaScript code can be done in several ways, depending on your needs and the environment in which you want to run the code. Here are some common methods for running JavaScript:
+
+1. Web Browser Console:
+
+The most common way to run JavaScript is in a web browser. You can open your browser's developer console (usually by pressing F12 or right-clicking and selecting "Inspect" and then navigating to the "Console" tab) and enter JavaScript code directly. Pressing Enter will execute the code, and you'll see the results in the console.
+
+2. HTML File:
+
+You can include JavaScript code within an HTML file using <script> tags. Here's an example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript Page</title>
+</head>
+<body>
+    <script>
+        // JavaScript code goes here
+console.log("Hello, World!");
+    </script>
+</body>
+</html>
+
+When you open this HTML file in a web browser, the JavaScript code will be executed.
+
+
+3. External JavaScript file:
+
+For larger JavaScript codebases, it's common to store the code in an external file with a .js extension. You can then include this file in your HTML like this:
+
+<script src="myscript.js"></script>
+
+The content of myscript.js can contain JavaScript code that will be executed when the HTML page is loaded.
+
+Q.4) What are datatypes of JavaScript?
+
+JavaScript has several built-in data types that are used to represent different kinds of values. These data types can be categorized into two main groups: primitive data types and non primitive data types.
+
+Primitive Data Types:
+
+1 Number: Represents numeric values, both integers and floating-point numbers. For example: 42, 3.14.
+
+2. String: Represents sequences of characters enclosed in single (' '), double (" "), or backticks (`) quotes. For example: "Hello, World!".
+
+3. Boolean: Represents a binary value, which can be either true or false.
+
+4. Undefined: Represents a variable that has been declared but hasn't been assigned a value. Variables are automatically initialized to undefined if no value is assigned.
+
+5. Null: Represents an intentional absence of any value or object. It's often used to indicate that a variable should have no value.
+
+6. Symbol (ES6): Represents a unique and immutable value primarily used as object property keys to prevent naming conflicts.
+
+7. BigInt (ES11): Represents large integer values that cannot be represented by the Number type. It is denoted by appending n to the end of a number, like 10n.
+
+Non primitive Data Types:
+
+1. Object: Represents a collection of key-value pairs. Objects are used for complex data structures and can hold functions, arrays, and other objects as properties.
+
+2. Array: A specialized type of object that represents a list-like collection of values. Arrays can hold elements of different data types.
+
+3. Function: Functions in JavaScript are first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from functions.
+
+4. Date: Represents date and time values. JavaScript provides the Date object for working with dates and times.
+
+5. RegExp (Regular Expression): Used for working with text patterns and searching, matching, and manipulating strings based on patterns.
+
+6. Map (ES6): Represents a collection of key-value pairs with various methods for managing data. Keys can be of any data type, including objects.
+
 The main difference between primitive and non-primitive data types are:
-* Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
-* Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
-* A primitive type has always a value, while non-primitive types can be null.
-* A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
-* Primitive data types are number, string, boolean, NULL, Infinity and symbol. Non-primitive data types is the object. The JavaScript arrays and functions are also objects.
 
-What are variables in JavaScript?
-Variables are Containers for Storing Data. There are three types of keywords for a variable declaration in JS: var, let, and const. var x; const y; let z;.
+1. Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+2. non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+3. A primitive type has always a value, while non-primitive types can be null.
+4. A primitive type starts with a lowercase letter, while non-primitive types start with an uppercase letter.
+5. Primitive data types are number, string, Boolean, NULL, Infinity and symbol. Non-primitive data types are the object. The JavaScript arrays and functions are also objects.
 
-.
+Q_5) What are variables in JavaScript?
+
+In JavaScript, there are three types of variables based on their declaration keywords: var, let, and const. Each type of variable has different characteristics and use cases:
+
+var Variables:
+
+* Variables declared with the var keyword are function scoped. This means they are only accessible within the function in which they are declared, or they have global scope if declared outside of any function.
+* Variables declared with var are hoisted, which means they are moved to the top of their containing function or global context during the JavaScript compilation phase. However, only the declaration is hoisted, not the initialization.
+* var variables can be redeclared within the same scope, and they can be reassigned new values.
+* Due to their behaviour, var variables can lead to unexpected issues and are generally not recommended for modern JavaScript code.
+
+function exampleFunction() {
+    var x = 10;
+if (true) {
+        var x = 20; // This reassigns the outer "x"
+    }
+    console.log(x); // Outputs: 20
+}
+
+let Variables:
+
+* Variables declared with the let keyword are block-scoped, which means they are confined to the block (between curly braces) in which they are declared, such as within an if statement or loop.
+* let variables are not hoisted in the same way as var variables. They are hoisted but not initialized, so they are in a "temporal dead zone" until their declaration is reached.
+* let variables can be reassigned new values, but they cannot be redeclared within the same scope.
+
+function exampleFunction() {
+    let y = 10;
+    if (true) {
+        let y = 20; // This creates a new variable "y" within the block
+    }
+    console.log(y); // Outputs: 10 (the outer "y" is still accessible)
+}
+
+const Variables:
+
+* Variables declared with the const keyword are also block-scoped.
+Unlike let, const variables cannot be reassigned after their initial value is set. They are constants and should be used when the value should not change.
+* Similar to let, const variables are not hoisted in the same way as var variables, and they must be initialized when declared.
+
+const z = 10;
+// z = 20; // This would result in an error, as "z" cannot be reassigned
+
+Choosing the appropriate type of variable (var, let, or const) depends on your specific use case and the desired scope and mutability of the variable. In modern JavaScript, it's recommended to use let and const for better code clarity and to avoid common pitfalls associated with var. Use const for values that should remain constant and let for values that may change during the program's execution.
+
