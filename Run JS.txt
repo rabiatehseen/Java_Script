@@ -1,0 +1,39 @@
+Q_2) History of JS?
+
+JavaScript, often referred to as JS, started in the mid-1990s when Netscape, a web browser company, wanted a way to make web pages more interactive. Originally called Live Script, it later became JavaScript. Despite its name, it's different from Java. In 1997, it was standardized as ECMAScript. During the early 2000s, JS became crucial in web development, allowing websites to change and update without needing to reload. This led to Web 2.0, where sites got much more interactive. In 2015, ECMAScript 6 brought many improvements, and Node.js in 2009 allowed JS to run on servers, not just in browsers. Today, JavaScript is a vital part of web and app development, constantly evolving to create dynamic and engaging online experiences.
+
+Q_3) How to run JS?
+Running JavaScript code can be done in several ways, depending on your needs and the environment in which you want to run the code. Here are some common methods for running JavaScript:
+
+1. Web Browser Console:
+
+The most common way to run JavaScript is in a web browser. You can open your browser's developer console (usually by pressing F12 or right-clicking and selecting "Inspect" and then navigating to the "Console" tab) and enter JavaScript code directly. Pressing Enter will execute the code, and you'll see the results in the console.
+
+2. HTML File:
+
+You can include JavaScript code within an HTML file using <script> tags. Here's an example:
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My JavaScript Page</title>
+</head>
+<body>
+    <script>
+        // JavaScript code goes here
+console.log("Hello, World!");
+    </script>
+</body>
+</html>
+
+When you open this HTML file in a web browser, the JavaScript code will be executed.
+
+
+3. External JavaScript file:
+
+For larger JavaScript codebases, it's common to store the code in an external file with a .js extension. You can then include this file in your HTML like this:
+
+<script src="myscript.js"></script>
+
+The content of myscript.js can contain JavaScript code that will be executed when the HTML page is loaded.
+
