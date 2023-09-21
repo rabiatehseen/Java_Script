@@ -1,0 +1,11 @@
+Q_1) What is JavaScript ?
+
+JavaScript is a text-based programming language used both on the client-side and server-side. It is a versatile and widely used programming language primarily used for web development. It allows developers to add interactivity, manipulate web page content, and create dynamic experiences for users within web browsers. JavaScript is a core technology for building modern web applications and is supported by all major web browsers like Chrome, Firefox, Safari, and Edge.
+Some of the key features of JavaScript include:
+1. Client-Side Scripting: JavaScript is mainly executed on the client side, which means it runs in the user's web browser. This allows developers to create dynamic and responsive user interfaces without requiring constant communication with the web server.
+2. Server-Side Development: While JavaScript is mainly associated with client-side scripting, it can also be used for server-side development through platforms like Node.js. This enables developers to use JavaScript for building both the front-end and back-end components of web applications.
+3. High-Level Language: JavaScript is a high-level, interpreted language, making it relatively easy to read, write, and debug. It has a C-like syntax, making it accessible to developers from various programming backgrounds.
+4. Extensive Standard Library: JavaScript comes with a comprehensive standard library that provides built-in functions and objects for various tasks, such as manipulating strings, working with arrays, and handling events.
+5. Interpreted Language: JavaScript code is executed directly by a web browser without the need for compilation, which makes development and testing more accessible.
+6. Scripting Language: JavaScript is often referred to as a scripting language because it is primarily used to write scripts that are executed within a web browser. These scripts can manipulate web page content, respond to user interactions, and perform various tasks.
+
