@@ -1,0 +1,44 @@
+Q_5) What are variables in JavaScript?
+
+In JavaScript, there are three types of variables based on their declaration keywords: var, let, and const. Each type of variable has different characteristics and use cases:
+
+var Variables:
+
+* Variables declared with the var keyword are function scoped. This means they are only accessible within the function in which they are declared, or they have global scope if declared outside of any function.
+* Variables declared with var are hoisted, which means they are moved to the top of their containing function or global context during the JavaScript compilation phase. However, only the declaration is hoisted, not the initialization.
+* var variables can be redeclared within the same scope, and they can be reassigned new values.
+* Due to their behaviour, var variables can lead to unexpected issues and are generally not recommended for modern JavaScript code.
+
+function exampleFunction() {
+    var x = 10;
+if (true) {
+        var x = 20; // This reassigns the outer "x"
+    }
+    console.log(x); // Outputs: 20
+}
+
+let Variables:
+
+* Variables declared with the let keyword are block-scoped, which means they are confined to the block (between curly braces) in which they are declared, such as within an if statement or loop.
+* let variables are not hoisted in the same way as var variables. They are hoisted but not initialized, so they are in a "temporal dead zone" until their declaration is reached.
+* let variables can be reassigned new values, but they cannot be redeclared within the same scope.
+
+function exampleFunction() {
+    let y = 10;
+    if (true) {
+        let y = 20; // This creates a new variable "y" within the block
+    }
+    console.log(y); // Outputs: 10 (the outer "y" is still accessible)
+}
+
+const Variables:
+
+* Variables declared with the const keyword are also block-scoped.
+Unlike let, const variables cannot be reassigned after their initial value is set. They are constants and should be used when the value should not change.
+* Similar to let, const variables are not hoisted in the same way as var variables, and they must be initialized when declared.
+
+const z = 10;
+// z = 20; // This would result in an error, as "z" cannot be reassigned
+
+Choosing the appropriate type of variable (var, let, or const) depends on your specific use case and the desired scope and mutability of the variable. In modern JavaScript, it's recommended to use let and const for better code clarity and to avoid common pitfalls associated with var. Use const for values that should remain constant and let for values that may change during the program's execution.
+
