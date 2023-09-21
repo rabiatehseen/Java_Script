@@ -1,0 +1,41 @@
+Q.4) What are datatypes of JavaScript?
+
+JavaScript has several built-in data types that are used to represent different kinds of values. These data types can be categorized into two main groups: primitive data types and non primitive data types.
+
+Primitive Data Types:
+
+1 Number: Represents numeric values, both integers and floating-point numbers. For example: 42, 3.14.
+
+2. String: Represents sequences of characters enclosed in single (' '), double (" "), or backticks (`) quotes. For example: "Hello, World!".
+
+3. Boolean: Represents a binary value, which can be either true or false.
+
+4. Undefined: Represents a variable that has been declared but hasn't been assigned a value. Variables are automatically initialized to undefined if no value is assigned.
+
+5. Null: Represents an intentional absence of any value or object. It's often used to indicate that a variable should have no value.
+
+6. Symbol (ES6): Represents a unique and immutable value primarily used as object property keys to prevent naming conflicts.
+
+7. BigInt (ES11): Represents large integer values that cannot be represented by the Number type. It is denoted by appending n to the end of a number, like 10n.
+
+Non primitive Data Types:
+
+1. Object: Represents a collection of key-value pairs. Objects are used for complex data structures and can hold functions, arrays, and other objects as properties.
+
+2. Array: A specialized type of object that represents a list-like collection of values. Arrays can hold elements of different data types.
+
+3. Function: Functions in JavaScript are first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from functions.
+
+4. Date: Represents date and time values. JavaScript provides the Date object for working with dates and times.
+
+5. RegExp (Regular Expression): Used for working with text patterns and searching, matching, and manipulating strings based on patterns.
+
+6. Map (ES6): Represents a collection of key-value pairs with various methods for managing data. Keys can be of any data type, including objects.
+
+The main difference between primitive and non-primitive data types are:
+
+1. Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+2. non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+3. A primitive type has always a value, while non-primitive types can be null.
+4. A primitive type starts with a lowercase letter, while non-primitive types start with an uppercase letter.
+5. Primitive data types are number, string, Boolean, NULL, Infinity and symbol. Non-primitive data types are the object. The JavaScript arrays and functions are also objects.
